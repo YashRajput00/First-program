@@ -3,25 +3,24 @@ import sys
 
 def print_lyrics ():
     lyrics = [
-       "kyoon pyaar main too nadaan bane",
-        "ik pagal ka armaan bane",
-        "Ab laut ke jaana mushkil hai",
-        "maine chhod diya hai jag sara",
-        "Itna na mujhse tu pyaar badha",
-        "ki main ik badal aawara",
-        "janam janam se hoon saath tere",
-        "hai naam mera jal ki dhara",
+       "Khamoshiyan......Ek Saaz Hai",
+        "Tum Dhun Koi Laao Zaraa...",  
+        "Khamoshiyan .........Alfaaz hai",
+        "Kabhi Aa Gunguna Le Zaraa...",
+        "Beqrar Hain.........Baat Karne Ko",
+        "Khene Do Inko Zaraaaa.........",
+        "Khamoshiyan.....",
     ]
-    delays = [0.5, 0.9, 0.8, 0.9, 0.8, 0.7, 0.9, 1.0]
+    delays = [1.2, 1.8, 1.8, 2.0, 1.3, 2.0, 1.0]
 
-    print("Itna Na Tu Mujhse Pyaar Badha\n")
-    time.sleep(2.0)
+    print("Khamoshiyan\n")
+    time.sleep(1.4)
     
     for i, line in enumerate(lyrics):
         for char in line: 
             sys.stdout.write(char)
             sys.stdout.flush()
-            time.sleep(0.1)
+            time.sleep(0.11)
         print()
-        time.sleep(delays[i]) if i < len(delays) else 0.5
+        time.sleep(delays[i])
 print_lyrics()
